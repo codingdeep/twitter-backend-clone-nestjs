@@ -1,6 +1,8 @@
 import {Body, Controller, Delete, Get, Param, Post, Put} from '@nestjs/common';
 import {PostsCtrlTypes} from "../types/posts.ctrl.types";
+import {ApiTags} from "@nestjs/swagger";
 
+@ApiTags('posts')
 @Controller('posts')
 export class PostsController implements PostsCtrlTypes {
 
